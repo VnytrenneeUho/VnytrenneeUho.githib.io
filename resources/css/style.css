@@ -5,6 +5,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #2d5185 - аутер
 #f8bd9f - боттом иннер
 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body,html{width:100%;height:100%}body{-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:none;margin:0;padding:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}ol,ul{list-style:none}hr{border:0;height:1px;background:#ccc}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{margin:0;padding:0;list-style:none;box-sizing:border-box}html,input,select,textarea,button,a{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+/*
+#2d5185 - синева вокруг центра
+#00C9FF - вот этот бирюзовый
+#2d5185 - аутер
+#f8bd9f - боттом иннер
+*/
 @charset: "UTF-8";
 
 div#container {
@@ -41,7 +48,6 @@ input[type=button].centerB {
 	border: 2px solid #e3eaf4;
 	border-radius: 100%;
 }
-
 div#top_left {
 	height: 50%;
 	width: 50%;
@@ -121,18 +127,18 @@ div#container label.outer {
 }
 
 div#container input.inner:checked ~ label.inner {
-	padding: 100px;
+	padding: 80px;
 	transition: padding 0.3s;
 }
 
 
 div#container input[type=checkbox]:checked ~label.outer {
-	padding: 115px;
+	padding: 105px;
 	transition: padding 0.3s;
 }
 
 div#container input.inner:checked ~ input.outer:checked ~ label.outer {
-	padding: 215px;
+	padding: 170px;
 	transition: padding 0.3s;
 }
 
@@ -165,7 +171,7 @@ div#container label.outer {
 }
 
 div#container ul {
-	width: 190px;
+	width: 150px;
 	position: absolute;
 	margin-bottom: 3px;
 	z-index: 0;
@@ -177,7 +183,7 @@ div#container ul.outer {
 }
 
 div#container input.inner:checked ~ ul.outer {
-	width: 420px;	
+	width: 320px;	
 }
 
 div#container input.inner:checked ~ input.outer:checked ~ ul.outer {
@@ -255,4 +261,4 @@ div#container input[type=checkbox]:checked ~ ul li a {
 
 div#container ul li a:hover {
 	color: #00C0FF;
-}  
+} 
